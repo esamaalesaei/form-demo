@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Text Input Example</title>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Form Controls</h1>
+      <h2>Text Input Controls</h2>
+      <h3>
+        Text Inputs (also called Textboxes) are used to collect information like
+        names and addresses.
+      </h3>
+      <form method="get">
+        <fieldset>
+          <legend>Example</legend>
+
+          <div>
+            <label for="firstName">First name</label>
+            <input id="firstName" type="text" name="first_name" readonly minlength="3" maxlength="10" pattern="A-Z0-9" value="Ian" />
+          </div>
+
+          <div>
+            <label for="lastName">Last name</label>
+            <input id="lastName" type="text" name="last_name" value="Taite" />
+          </div>
+
+          <div>
+            <label for="age">Age</label>
+            <input id="age" type="number" name="age" min="18" max="70" required value="21" />
+          </div>
+
+          <div>
+            <label for="addressLine1">Address line 1</label>
+            <input id="addressLine1" type="text" name="addrLine1" value="23 Milpond Road" />
+          </div>
+
+          <div>
+            <label for="addressLine2">Address line 2</label>
+            <input id="addressLine2" type="text" name="addrLine2" value="Bolton" />
+          </div>
+
+          <div>
+            <label for="postCode">Post code</label>
+            <input id="postCode" type="text" name="postCode" value="BL9 1QR" />
+          </div>
+        </fieldset>
+        <button type="reset">Reset</button>
+        <button disabled type="submit">Submit</button>
+      </form>
+    </div>
+    <style>
+      div > label { display: block; }
+      div > input { display: block; }
+    </style>
+    <script src="script.js"></script>
+  </body>
+</html>

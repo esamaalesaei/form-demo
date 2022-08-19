@@ -1,0 +1,22 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+body {
+  padding: 20px;
+}
+.container {
+  width: 600px;
+  margin: auto;
+}
+fieldset {
+  border: 1px solid darkgrey;
+  border-radius: 3px;
+  padding: 12px;
+  margin: 12px 0;
+}
+
+fieldset > div {
+  padding: 6px 0;
+}

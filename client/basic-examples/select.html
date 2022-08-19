@@ -9,13 +9,15 @@
       <h1>Form Controls</h1>
       <h2>Select Controls</h2>
       <h3>
-        Select controls are often used to choose one option OR more than one option from a list of
-        options.
+        Select controls are often used to choose one option OR more than one
+        option from a list of options.
       </h3>
       <form method="get">
         <fieldset>
           <legend>Example 1</legend>
-          <label for="continent">Which is the <em>largest</em> continent?</label>
+          <label for="continent"
+            >Which is the <em>largest</em> continent?</label
+          >
           <select name="continent" id="continent">
             <option value="NA">North America</option>
             <option value="SA">South America</option>
@@ -29,7 +31,17 @@
 
         <fieldset>
           <legend>Example 2</legend>
-          <label for="cars">Which <em>cars</em> are manufactured in your country?</label>
+          <p>To select multiple choices, you can select either</p>
+          <ul>
+            <li>individual items by clicking just one, or</li>
+            <li>
+              a range of items by clicking the first one and shift + click the
+              last one.
+            </li>
+          </ul>
+          <label for="cars"
+            >Which <em>cars</em> are manufactured in your country?</label
+          >
           <select id="cars" name="cars" multiple>
             <option value="Alfa">Alfa</option>
             <option value="BMW">BMW</option>
